@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 const options = ['Pomodoro', 'Short Break', 'Long Break'];
 
-const Header = ({setTime, setCurrentTime, currentTime, handleStartStop}) => {
+const Header_pomodoro = ({setTime, setCurrentTime, currentTime, handleStartStop}) => {
 
     const handlePress = (index) => {
         const newTime = index === 0 ? 25 : index === 1 ? 5 : 15;
@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Header;
+export default Header_pomodoro;
 
